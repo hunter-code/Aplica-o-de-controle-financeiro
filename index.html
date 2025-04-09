@@ -57,35 +57,68 @@
 
       <section id="transaction">
         <h2 class="sr-only">Transações</h2>
-
+   
+        <a href="#" class="button new">-> nova Transação</a>
+          
         <table id="data-table">
           <thead>
             <tr>
               <th>Descrição</th>
               <th>Valor</th>
               <th>Data</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="description">Luz</td>
+              <td class="amount">Luz</td>
               <td class="expense">-R$ 500,00</td>
               <td class="date">23/01/2021</td>
+              <td>
+              <img src="./assets/minus.svg" alt="Remover trasação feita">
+            </td>
             </tr>
             <tr>
-              <td class="description">Criação websites</td>
+              <td class="amount">Criação websites</td>
               <td class="income">R$ 5.000,00</td>
               <td class="date">23/01/2021</td>
+              <td>
+                <img src="./assets/minus.svg" alt="Remover trasação feita">
+              </td>
             </tr>
             <tr>
-              <td class="description">Internet</td>
+              <td class="amount">Internet</td>
               <td class="expense">-R$ 200,00</td>
               <td class="date">23/01/2021</td>
+              <td>
+                <img src="./assets/minus.svg" alt="Remover trasação feita">
+              </td>
             </tr>
           </tbody>
         </table>
       </section>
     </main>
+
+     <div class="modal-overlay active">
+        <div class="modal">
+          <div id="form">
+              <h2>Nova Transação</h2>  
+              <form action="">
+
+                <div class="input-group">
+                  <label class="sr-only" for="amount">Descrição</label>
+                  <input type="text" id="amount" name="amount"
+                placeholder="Descrição"/>
+                </div>
+
+                <div class="input-group">
+                  <label class="sr-only" for="amount">Descrição</label>
+                  <input type="number" id="amount" name="amount"
+                placeholder="Descrição"/>
+                </div>
+              </form>
+         </div>
+     </div>
 
     <footer>
       <p>dev.finances$</p>
