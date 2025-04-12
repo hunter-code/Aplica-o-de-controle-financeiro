@@ -56,16 +56,20 @@
      //(Substituir os dados html com os dados do js)
 
      const DOM = {
-      innerHTMLTransaction(){
+      addTransaction(){
+       const tr = document.createElement('');
+       tr.innerHTML = DOM.innerHTMLTransaction()
+       
+      },
+      innerHTMLTransaction(transaction,index){
         const html = `
-          <tr>
               <td class="amount">Luz</td>
               <td class="expense">-R$ 500,00</td>
               <td class="date">23/01/2021</td>
               <td>
               <img src="./assets/minus.svg" alt="Remover trasação feita">
             </td>
-          </tr>
-        `
+            `
+            return html
       }
      }
