@@ -1,25 +1,33 @@
 body { 
-    font-family: sans-serif; 
-    background:linear-gradient(90deg, #ee7752, #e73c7e)
+    font-family: 'Poppins', sans-serif; 
+    background:linear-gradient(90deg, #ee7752, #e73c7e);
 }
 
-.container { 
+
+
+/*Container da aplicação principal*/
+.main { 
     
     width: 400px; 
     margin: 120px auto; 
+    margin-bottom: 95px;
     padding: 20px; 
-    border: 2px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 15px;
     background:linear-gradient(360deg, #ee7752, #e73cc8 ) ;
     
 
 }
 
+/*Cabeçalho da  aplicação*/
+
 h2 {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 50px;
 }
+
+/*Inputs de descrição e valor*/
 
 input[type=text], input[type=number] { 
     
@@ -28,6 +36,8 @@ input[type=text], input[type=number] {
     margin-bottom: 10px; 
     box-sizing: border-box; 
 }
+
+/*Botão adicionar*/
 
 button { 
     background-color: #4CAF50; 
@@ -42,7 +52,7 @@ button {
     border-radius: 4px; 
 }
 
-/*botão remover*/
+/*Botão remover*/
 button.remover {
     
     background-color:  #ee5f52 ;
@@ -62,5 +72,10 @@ button.remover {
 #saldo { 
     margin-top: 20px; 
     font-weight: bold; }
+
+.roda-pe{
+    text-align: center;
+  
+}
 
     

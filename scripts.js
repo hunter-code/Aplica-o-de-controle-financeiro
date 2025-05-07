@@ -53,6 +53,7 @@ function atualizarLista(){
   entradas.forEach((entrada, index) => {
   const item = document.createElement("li");
   item.textContent = `${index+1}. ${entrada.descricao} - R$ ${entrada.valor.toFixed(2)}`;
+
   // const removerBtn = document.createElement("button");/*expirency ("button")*/
   removerBtn.textContent = 'Você pode adicionar uma nova entrada, ou remove-las!' ;
   removerBtn.onclick = () => removerEntrada(index);
